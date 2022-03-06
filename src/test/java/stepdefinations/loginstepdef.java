@@ -93,6 +93,13 @@ public class loginstepdef {
  		System.out.println("User is in Retailer Portal");
  		System.out.println("User is in Retailer Portal");
  		System.out.println("User is in Retailer Portal");
+ 		System.out.println("User is in Retailer Portal");
+ 		System.out.println("User is in Retailer Portal");
+ 		System.out.println("User is in Retailer Portal");
+ 		System.out.println("User is in Retailer Portal");
+ 		System.out.println("User is in Retailer Portal");
+ 		System.out.println("User is in Retailer Portal");
+	
 	
 	}
 	
