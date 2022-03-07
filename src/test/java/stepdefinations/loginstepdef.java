@@ -92,13 +92,6 @@ public class loginstepdef {
  		driver= base.getDriver();
  		System.out.println("User is in Retailer Portal");
  		System.out.println("User is in Retailer Portal");
- 		System.out.println("User is in Retailer Portal");
- 		System.out.println("User is in Retailer Portal");
- 		System.out.println("User is in Retailer Portal");
- 		System.out.println("User is in Retailer Portal");
- 		System.out.println("User is in Retailer Portal");
- 		System.out.println("User is in Retailer Portal");
- 		System.out.println("User is in Retailer Portal");
 	
 	
 	}
