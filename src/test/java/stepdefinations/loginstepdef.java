@@ -91,7 +91,10 @@ public class loginstepdef {
 	    Base base = new Base();
  		driver= base.getDriver();
  		System.out.println("User is in Retailer Portal");
- 		System.out.println("User is in Retailer Portal");
+ 		System.out.println("User is in Retailer Portal1");
+ 		System.out.println("User is in Retailer Portal2");
+ 		System.out.println("User is in Retailer Portal3");
+ 
 	
 	
 	}
