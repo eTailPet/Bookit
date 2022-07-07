@@ -16,7 +16,7 @@ public class Base {
 	public  WebDriver getDriver() throws IOException
 	{
 		prop=new Properties();
-		FileInputStream fis=new FileInputStream("C:\\Users\\manis\\eclipse-workspace\\Etailpet-Bookit2\\src\\test\\java\\cucumberAutomation\\global.properties");
+		FileInputStream fis=new FileInputStream("C:\\Users\\manis\\eclipse-workspace\\Etailpet-Bookit\\src\\test\\java\\cucumberAutomation\\global.properties");
 		
 	prop.load(fis);
 
