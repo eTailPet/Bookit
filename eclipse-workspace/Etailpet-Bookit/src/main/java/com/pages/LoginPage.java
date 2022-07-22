@@ -18,7 +18,7 @@ public WebDriver driver;
 	By Password = By.id("signin-password");
 	By Rememberme= By.xpath("//span[text()='Remember me']");
 	
-	By SIGNINN1=By.xpath("//input[contains(@class,'btn btn-primary')]");
+	By SIGNINN1=By.xpath("//input[@value='Sign In']");
 
 	public WebElement Rememberme()
 	{

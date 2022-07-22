@@ -1,6 +1,9 @@
 package stepdefinations;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -10,6 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import com.pages.Add_on_service;
+import com.pages.Appointment_Schedule;
 import com.pages.HomePage;
 import com.pages.LoginPage;
 import com.pages.ProductStore;
@@ -26,9 +30,14 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.java.it.Date;
 
 
 public class BKI_Booking {
+
+	private static final Object Arguments = null;
+
+	private static final String Script = null;
 
 	public WebDriver driver;
 	
@@ -36,6 +45,7 @@ public class BKI_Booking {
 	LoginPage l;
 	SignupPage s;
 	Schedule se;
+	Appointment_Schedule sa;
 //	ProductlistPage pl;
 //	ProductStore ps;
 //	Add_on_service ADD;
@@ -106,7 +116,35 @@ public class BKI_Booking {
 			Thread.sleep(5000);
 		
 		}
-
+		
+//		@Then("^user select service type$")
+//		public void user_select_Bookit44_from_dashboard() throws Throwable
+//		{	
+//			driver.manage().timeouts().implicitlyWait(8000, TimeUnit.SECONDS);
+//			driver.navigate().refresh();
+//			driver.findElement(By.xpath("//button[text()='Add new service type']")).click();
+//			WebElement existingService= driver.findElement(By.name("serviceTypeName"));
+//			existingService.sendKeys("MyFirstServesss");
+//			WebElement IndexValue = driver.findElement(By.name("serviceTypeIndexValue"));
+//			IndexValue.sendKeys("2");
+//			//WebElement UploadService= driver.findElement(By.xpath("//label[@class='custom-file-label']"));
+//			driver.findElement(By.id("inputGroupFile01")).sendKeys("C:\\\\Users\\\\manis\\\\OneDrive\\\\Desktop\\\\etailpet\\\\labrador-retriever-dog-breed-info.jpg");
+//			driver.manage().timeouts().implicitlyWait(8000, TimeUnit.SECONDS);
+//			driver.findElement(By.xpath("//button[@class='btn btn-orange btn']")).click();
+//			
+//			Thread.sleep(5000);
+//		
+//		}
+//		 @Then("^user click on Configuration$")
+//		    public void  user_click_on_Configuration() throws Throwable {
+//		        
+//		    
+//		    h=new HomePage(driver);
+//	        h.user_click_configuration().click();	  
+//	        driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
+//		    	driver.findElement(By.xpath("//strong[text()='Service Types']")).click();
+//		    	
+//		    }
 		@Then("^user click on booking tab$")
 	    public void user_clicks_bookungtab() throws Throwable {
 	        
@@ -122,7 +160,7 @@ public class BKI_Booking {
 			Thread.sleep(3000);
 	    h=new HomePage(driver);
         h.user_click_Schedule1().click();	  
-	    	Thread.sleep(3000);
+        driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	    	
 	    }
 		@Then("^user click on new Appointment tab$")
@@ -131,10 +169,81 @@ public class BKI_Booking {
 			
 	    se=new Schedule(driver);
          se.user_click_new_appointment().click();	  
-	    	Thread.sleep(3000);
+	    driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+
 	    	
 	    }
+		@Then("^User Select Customer$")
+	    public void user_select_customer() throws Throwable {
+	        
+		 
+			sa=new Appointment_Schedule(driver);
+			sa.User_Select_Customer().click();
+		    Thread.sleep(3000);
+			sa.User_enter_customer_name().sendKeys("manis");
+			Thread.sleep(3000);
+			sa.User_enter_customer_name1().click();
 
+	    }
+		
+		
+		@Then("^User Select pet type$")
+	    public void user_select_pettype() throws Throwable {
+	        
+			sa=new Appointment_Schedule(driver);
+			sa.User_click_petdetails_scroll().click();
+			Thread.sleep(3000);
+		    sa.User_click_select_pettype().click();
+		    Thread.sleep(3000);
+		    sa.User_select_pettype().click();
+		    Thread.sleep(5000);
+		    sa.User_click_on_Temperament().click();
+		    Thread.sleep(5000);
+		    sa.User_select_Temperament().click();
+		    Thread.sleep(2000);
+		    sa.User_click_on_hairlength().click();
+		    Thread.sleep(2000);
+		    sa.User_select_hairlength().click();
+		}
+		
+		 @Then("^User Select service type$")
+		    public void user_select_service_type() throws Throwable {
+			driver.findElement(By.xpath("(//div[@class='card-header']//button)[2]")).click();
+			sa=new Appointment_Schedule(driver);
+			sa.user_click_on_servicetype().click();
+			Thread.sleep(3000);
+			sa.user_Enetr_service_typename().sendKeys("groom");
+			Thread.sleep(3000);
+			sa.user_select_servicetype().click();
+	    }
+		 @Then("^User select service name$")
+		    public void user_select_service_name() throws Throwable {
+		 
+			sa=new Appointment_Schedule(driver);
+			sa.user_select_service().click();
+			Thread.sleep(3000);
+			sa.user_select_servicename().click();
+			Thread.sleep(3000);
+			System.out.println("all field Automatically populated");
+	    }
+//		 @Then("^User select Attendant$")
+//		    public void user_select_attendant() throws Throwable {
+//		 
+//			sa=new Appointment_Schedule(driver);
+////			sa.user_select_Attendant().click();
+////			Thread.sleep(3000);
+////			sa.user_select_Attendantjessy().click();
+//			Thread.sleep(3000);
+//			System.out.println("all field Automatically populated");
+//	    }
+		 @Then("^User Select TimeSlot$")
+		    public void user_select_TimeSlot() throws Throwable {
+		 
+			sa=new Appointment_Schedule(driver);
+			sa.user_click_on_selecttimeslot().click();
+			Thread.sleep(3000);
+		
+	    }
 	   @Then("^user clicks on signup link$")
 	    public void user_clicks_signuplink() throws Throwable {
 	        

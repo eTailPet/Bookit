@@ -1,5 +1,4 @@
 //package stepdefinations;
-//package stepdefinations;
 //
 //import java.io.IOException;
 //
@@ -28,7 +27,7 @@
 //import io.cucumber.java.en.When;
 //
 //
-//public class Bookitstepdef {
+//public class Add_on_services {
 //
 //	public WebDriver driver;
 //	
@@ -178,7 +177,7 @@
 //			  String text5 = title.getText();
 //			  Thread.sleep(3000);
 //			  String text6 = "Add-on Service is currently used by Services";
-//			  Assert.assertEquals(text1, text2);		
+//			 // Assert.assertEquals(text1, text2);		
 //			  try{
 //		          Assert.assertEquals(text5, text6);
 //		          System.out.println( " - passed");
