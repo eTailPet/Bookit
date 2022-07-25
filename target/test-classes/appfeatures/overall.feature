@@ -14,7 +14,7 @@ Feature: Retailer Portal Bookit
     #Then Verify Appointment id is shown on the top of the pop up
     #Then Click on the Edit Button corresponding to the Note to Edit
     #Then Submit the Notes edit
-@Smoke
+
   Scenario: pet type creation
     Given user is in landing page
     When user enter username

@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Feb 16, 2022 07:15:36 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jul 25, 2022 07:47:08 PM</span></a>
 </li>
 </ul>
 </div>
@@ -57,11 +57,6 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
-</a>
-</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -71,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Feb 16, 2022 07:15:36 pm</h3>
+<h3>Jul 25, 2022 07:47:08 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Feb 16, 2022 07:21:12 pm</h3>
+<h3>Jul 25, 2022 07:48:41 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -148,9 +143,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='97%'><b>44</b> steps passed</small></div>
+<div><small data-tooltip='90%'><b>10</b> steps passed</small></div>
 <div>
-<small data-tooltip='2%'><b>1</b> steps failed,
+<small data-tooltip='9%'><b>1</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -167,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Retailer Portal Bookit":334.415
+"Configuration Service Type in a Bookit form Retailer Dashboard":90.836
 };
 </script>
 <div class="row">
@@ -230,7 +225,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 44,
+passGrandChild: 10,
 failGrandChild: 1,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -266,9 +261,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Retailer Portal Bookit</p>
+            <p class="name">Configuration Service Type in a Bookit form Retailer Dashboard</p>
             <p class="text-sm">
-              <span>19:15:37 pm</span> / <span>00:05:34:415</span>
+              <span>19:47:10 PM</span> / <span>00:01:30:836</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -276,10 +271,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Retailer Portal Bookit</h5>
-<span class='badge badge-success'>02.16.2022 19:15:37</span>
-<span class='badge badge-danger'>02.16.2022 19:21:12</span>
-<span class='badge badge-default'>00:05:34:415</span>
+<h5 class="test-status text-fail">Configuration Service Type in a Bookit form Retailer Dashboard</h5>
+<span class='badge badge-success'>07.25.2022 19:47:10</span>
+<span class='badge badge-danger'>07.25.2022 19:48:41</span>
+<span class='badge badge-default'>00:01:30:836</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -289,271 +284,64 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>pet type creation</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>BKI-Service Type</div>
       </div>
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.user_is_in_landing_page()">
-                <span>Given user is in landing page</span>
+              <div class="step pass-bg" title="stepdefinations.StepDefinition.launch_the_web_application()">
+                <span>Given Launch the web application</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.user_enter_username()">
-                <span>When user enter username</span>
+              <div class="step pass-bg" title="stepdefinations.StepDefinition.sign_in_to_popup()">
+                <span>When Sign in to popup</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.user_enter_password()">
-                <span>When user enter password</span>
+              <div class="step pass-bg" title="stepdefinations.StepDefinition.login_screen()">
+                <span>When Login Screen</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.user_click_signin()">
-                <span>Then user click signin</span>
+              <div class="step pass-bg" title="stepdefinations.StepDefinition.switch_to_bookit()">
+                <span>Then Switch to Bookit</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.user_select_Bookit_from_dashboard()">
-                <span>Then user select Bookit from dashboard</span>
+              <div class="step pass-bg" title="stepdefinations.StepDefinition.verify_whether_user_is_able_to_delete_the_service_types()">
+                <span>When Verify whether user is able to delete the Service Types</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.click_on_booking_tab()">
-                <span>Then user click on booking tab</span>
+              <div class="step pass-bg" title="stepdefinations.StepDefinition.verify_whether_user_is_able_to_delete_the_service_types_with_appointment()">
+                <span>When Verify whether user is able to delete the Service Types with appointment</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.click_on_Configuration()">
-                <span>Then user click on Configuration</span>
+              <div class="step pass-bg" title="stepdefinations.StepDefinition.verify_whether_retailer_is_able_to_create_service_type()">
+                <span>When Verify whether retailer is able to create Service Type</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.click_on_Pet_type()">
-                <span>Then user click on  pet type</span>
+              <div class="step pass-bg" title="stepdefinations.StepDefinition.verify_whether_retailer_is_able_to_create_service_type_with_existing_name()">
+                <span>When Verify whether retailer is able to create Service Type with Existing name</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.user_enter_petname()">
-                <span>Then user enter pet name</span>
+              <div class="step pass-bg" title="stepdefinations.StepDefinition.verify_whether_service_type_is_able_to_inactive_from_the_service_type_listing_page()">
+                <span>When Verify whether Service Type is able to inactive from the Service Type listing page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.user_insert_image()">
-                <span>Then user insert image</span>
+              <div class="step pass-bg" title="stepdefinations.StepDefinition.verify_whether_service_type_is_able_to_active_from_the_service_type_listing_page()">
+                <span>When Verify whether Service Type is able to active from the Service Type listing page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.user_click_on_nextbutton_weightpage()">
-                <span>Then check pet type name is visible in pet weight page when click on next button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.user_click_on_nextbutton_weightpage_options_no()">
-                <span>Then Check retailer is able to select the weight range option as no / exact weight and weight ranges</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.user_verify_retailer_directedtohair_lengthpage()">
-                <span>Then verify add hair length option and click on add new hair length</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.user_verify_retailer_clicking_addnew()">
-                <span>Then verify retailer is able to next hair lenght by clicking on the add new hair length option</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.user_verify_retailer_clickon_buttonwothout_specifyingdata()">
-                <span>Then verify without specifying the data</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_retailr_is_able_active_and_deactive_the_hair_length_options()">
-                <span>Then Verify retailr is able  active and deactive the hair length options</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_after_clicking_on_the_next_button_retailer_is_directing_to_hair_texture_section()">
-                <span>Then Verify after clicking on the next button retailer is directing to hair texture section</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verfiy_add_new_hair_texture_by_clicking_on_the_add_new_hair_texture_link()">
-                <span>Then Verfiy add new hair texture by clicking on the add new hair texture link</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_retiler_is_able_to_give_hair_texture_with_new_option_by_clicking_on_the_add_new_texture()">
-                <span>Then Verify retiler is able to give hair texture with new option by clicking on the add new  texture</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_retailer_is_able_to_give_hair_texture_wthout_name_and_click_on_save_button()">
-                <span>Then Verify retailer is able to give hair texture wthout name and click on save button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_retailer_by_clicking_on_the_next_button_will_directing_to_deisred_hair_length_page()">
-                <span>Then Verify retailer by clicking on the next button will directing to deisred hair length page and pet name in the top</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_retailer_is_able_to_seelct_any_option_from_the_deired_hair_length_option()">
-                <span>Then Verify retailer is able to seelct any option from the deired hair length option</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_retailer_while_clicking_the_addnewlink_will_open_new_filed_enter_the_hair_texture_and_by_clicking_on_the_add_button_will_able_to_save_the_hair_texture()">
-                <span>Then Verify retailer while clicking the addnewlink will open new filed enter the hair texture and by clicking on the add button will able to save the hair texture</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_after_clciking_on_the_next_button_user_is_direting_to_combs_and_blades_section()">
-                <span>Then Verify after clciking on the next button user is direting to combs and blades section</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_user_is_able_to_select_any_option_from_the_combs_and_blades()">
-                <span>Then Verify user is able to select any option from the combs and blades</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_retailer_by_clicking_on_add_new_option_inside_the_combs_will_able_to_give_data()">
-                <span>Then Verify retailer by clicking on add new option inside the combs will able to give data</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_retailer_is_able_to_give_blades_options()">
-                <span>Then Verify retailer is able to give blades options</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_retailer_by_clicking_on_the_next_button_will_directing_to_temperament()">
-                <span>Then Verify retailer by clicking on the next button will directing to Temperament</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_retailer_is_able_to_select_option_noyes()">
-                <span>Then Verify retailer is able to select option no/yes</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_retailer_is_able_to_add_temperment_by_clicking_on_the_add_new_link_click_add_button()">
-                <span>Then Verify retailer is able to add temperment by clicking on the add new link- click add button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.check_by_clicking_on_next_button_it_will_directing_to_next_section()">
-                <span>Then Verify by clicking on next button it will directing to next section</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_user_is_able_to_select_any_option()">
-                <span>Then Verify user is able to select any option</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_user_is_able_to_click_on_addnewvaccine_link_by_clicking_newtable_will_open_to_addvaccination_details()">
-                <span>Then Verify user is able to click on addnewvaccine link by clicking newtable will open to addvaccination details</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_user_enter_vaccine_name_clickanadd_create_vaccine_option_adminstrationexpiry_and_document_uploadcheckboxes_based_retailer_wish_ableto_configureit()">
-                <span>Then Verify user enter vaccine name clickanadd create vaccine option adminstration,expiry and document uploadcheckboxes  based retailer wish ableto configureit</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_by_clicking_on_the_next_buttom_it_will_directing_to_next_page()">
-                <span>Then Verify by clicking on the next buttom it will  directing to next page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_by_selecting_the_option_as_yes_and_click_on_next_will_directing_to_ext_page()">
-                <span>Then Verify by selecting the option as -yes and click on next will directing to ext page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_by_seelcting_the_third_option_input_filed_will_generated_for_giving_the_data()">
-                <span>Then Verify by seelcting the third  option - input filed will generated for giving the data</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_by_add_vet_information_by_select_yes()">
-                <span>Then Verify by add vet information by select yes</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_retailer_is_selected_the_option_as_yes_able_to_document_upload()">
-                <span>Then Verify retailer is selected the option as yes -able to document upload</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_by_clicking_on_next_button_it_will_directing_to_emergency_contact()">
-                <span>Then Verify by clicking on next button it will directing to Emergency Contact</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_by_selectng_as_yes_able_to_add_emergency_conatct_info()">
-                <span>Then Verify by  selectng as -yes - able to add emergency conatct info</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_by_clicking_on_the_next_is_directing_to_decease_date()">
-                <span>Then Verify by clicking on the next is directing to Decease Date</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.loginstepdef.verify_by_selectng_as_yes_click_on_save_buton_pet_creation_is_competed_or_not()">
-                <span>Then Verify by  selectng as yes click on save buton, pet creation is competed or not</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="stepdefinations.loginstepdef.verify_by_pet_created_is_successfully_or_not()">
-                <span>Then Verify by pet created is successfully or not</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Pet type already exist with name labsdogs']"}
-  (Session info: chrome=98.0.4758.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MANISHA', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\manis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8ad256d9516d4f621d2f164d96b96057
-*** Element info: {Using=xpath, value=//div[text()='Pet type already exist with name labsdogs']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepdefinations.loginstepdef.verify_by_pet_created_is_successfully_or_not(loginstepdef.java:1778)
-	at ✽.Verify by pet created is successfully or not(file:///C:/Users/manis/eclipse-workspace/Etailpet_bookit/src/test/resources/appfeatures/overall.feature:62)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>appHooks.ApplicationHooks.teardown(io.cucumber.java.Scenario)</span>
-      <div>pet_type_creation
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded1.png' src="../embedded1.png">
-    
-    </div></div>
-</div>
-      <div>
+              <div class="step fail-bg" >
+                <span>When Verify whether Service Type is able to search  from the Service Type name in listing page</span>
+      <div>Step undefined
       </div>
               </div>
           </div>
@@ -603,63 +391,11 @@ Session ID: 8ad256d9516d4f621d2f164d96b96057
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>19:15:37 pm</td>
+<td>19:47:10 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>pet type creation</a>
+<a href="#" class="linked" test-id='1' id='2'>BKI-Service Type</a>
 <div class="">
-<span class="badge badge-default">Retailer Portal Bookit.pet type creation</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.openqa.selenium.NoSuchElementException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.NoSuchElementException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:21:11 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='47'>Then Verify by pet created is successfully or not</a>
-<div class="">
-<span class="badge badge-default">Retailer Portal Bookit.pet type creation.Then Verify by pet created is successfully or not</span>
+<span class="badge badge-default">Configuration Service Type in a Bookit form Retailer Dashboard.BKI-Service Type</span>
 </div>
 </td>
 </tr>
