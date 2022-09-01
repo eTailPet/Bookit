@@ -11,8 +11,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import com.pages.Add_on_service;
-import com.pages.CologneSelection;
 import com.pages.HomePage;
 import com.pages.LoginPage;
 import com.pages.ProductStore;
@@ -140,7 +138,7 @@ public class ShampooStepDef {
 		Thread.sleep(3000);
 		s.clickAddButton().click();
 		Thread.sleep(3000);
-		if(driver.findElement(By.xpath("//div[@class='Toastify__toast-body']")).getText().equalsIgnoreCase("shampoo added successfully")){
+		if(driver.findElement(By.xpath("//div[@role='alert']")).getText().equalsIgnoreCase("shampoo added successfully")){
 			System.out.println("Shampoo added successfully");
 			System.out.println("Passed!");
 		}

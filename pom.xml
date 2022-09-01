@@ -119,6 +119,7 @@
 					<encoding>UTF-8</encoding>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
+					
 				</configuration>
 			</plugin>
 			<plugin>
@@ -128,6 +129,7 @@
 				<configuration>
 					<includes>
 						<include>**/ParallelRun.java</include>
+						<include>**/MyTestRunner.java</include>
 					</includes>
 					<parallel>methods</parallel>
 					<threadCount>4</threadCount>

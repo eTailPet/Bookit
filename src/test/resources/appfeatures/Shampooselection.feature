@@ -1,7 +1,6 @@
 Feature: Bookit form Retailer Dashboard
 @Smoke
 Scenario: Shampoo Selection in a Bookit form Retailer Dashboard
-
 Given user is in landing page
 When user enters valid username
 And user enters vaid  password
